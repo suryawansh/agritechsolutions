@@ -1,0 +1,167 @@
+.main-header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  align-items: center;
+}
+
+#header-main-logo img {
+  margin-left: 110px;
+  width: 200px;
+  height: 130px;
+}
+
+.menu-bar-root {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 54px;
+}
+
+.email-contact-root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 24px;
+  padding: 6px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #9ec028;
+  border-radius: 4px;
+  width: max-content;
+}
+
+.menu-bar-container {
+  width: max-content;
+  position: relative;
+}
+
+.menu-bar-container .modal-content {
+  padding: 40px;
+}
+
+.menu-bar-container a {
+  color: black;
+  text-decoration: none;
+  border-radius: 0px;
+}
+
+.menu-bar-container a:hover {
+  background-color: #ccc;
+  color: black;
+}
+
+.ind-number {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.usa-number {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.dropdown-container {
+  position: absolute;
+  top: 100%;
+  left: 32.5%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  z-index: 201;
+  border: 1px solid gray;
+  border-top: 0;
+}
+
+.services-dropdown-container {
+  position: absolute;
+  top: 100%;
+  left: 16.3%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  z-index: 201;
+  border: 1px solid gray;
+  border-top: 0;
+}
+
+.dropdown-container a,
+.services-dropdown-container a {
+  font-size: 14px !important;
+}
+
+.menu-bar-container button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-bar-mobile-close {
+  width: max-content;
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.ind-flag {
+  height: 16px;
+}
+
+.usa-flag {
+  height: 16px;
+}
+
+.email-header {
+  color: #000;
+}
+
+@media only screen and (max-width: 1024px) {
+  #header-main-logo img {
+    margin-left: 0;
+  }
+
+  header hr {
+    display: none;
+  }
+
+  .menu-bar-container .menu-icon {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .all-categories-btn {
+    display: flex !important;
+    flex-direction: row !important;
+    text-decoration: none !important;
+    color: #000 !important;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+  }
+  .menu-bar-container button {
+    display: block;
+  }
+
+  .menu-bar-container.open a {
+    display: block;
+  }
+
+  .dropdown-container,
+  .services-dropdown-container {
+    position: static;
+    border: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .email-contact-root {
+    display: none;
+  }
+
+  .dropdown-container a {
+    flex: 50%;
+  }
+}
